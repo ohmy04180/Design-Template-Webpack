@@ -1,0 +1,14 @@
+.side-bar {
+  width: rem(240px);
+  height: 100%;
+  overflow-y: auto;
+  padding: $spacing-md;
+  border-right: 1px solid $text-02;
+}
+
+.contents {
+  flex: 1;
+  height: 100%;
+  padding: $spacing-md;
+  overflow-y: auto;
+}

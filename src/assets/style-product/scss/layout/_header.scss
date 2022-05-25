@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: rem(64px);
+  padding: 0 $spacing-md;
+  border-bottom: 2px solid $text-02;
+}
+
+.header__title {
+  @include font-size("24");
+  color: $text-01;
+}
