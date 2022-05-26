@@ -1,0 +1,123 @@
+<!-- Accordion -->
+<div class="contents">
+  <div class="contents__header">
+    <strong class="contents__title">component</strong>
+    <p class="contents__text">Accordion</p>
+  </div>
+  <div class="contents__body">
+    <div class="contents__body-inner">
+      <span class="contents__theme">Default</span>
+      <div class="contents__views">
+        <div class="accordion" aria-labelledby="accordion-component">
+          <div class="accordion__item">
+            <!-- accordion__head--open 클래스 추가시 open -->
+            <button class="accordion__head accordion__head--open" aria-expanded="true" aria-controls="accordion-01">
+              <span class="accordion__head-title"> Accordion Head Title </span>
+              <svg class="accordion__head-icon svg-icon" aria-hidden="true">
+                <use xlink:href="#chevron-left-medium"></use>
+              </svg>
+            </button>
+            <div class="accordion__body" id="accordion-01">
+              <div class="accordion-vertical">
+                <ul class="accordion-vertical__list">
+                  <li class="accordion-vertical__item accordion-vertical__item--selected">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text"> list-item-text </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close">
+                          </use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="accordion-vertical__item">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text">
+                        list-item-textlist-item-textlist-item-textlist-item-textlist-item-text
+                      </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="accordion-vertical__item">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text"> list-item-text </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <!-- accordion__head--open 클래스 추가시 open -->
+            <button class="accordion__head" aria-expanded="false" aria-controls="accordion-02">
+              <span class="accordion__head-title"> Accordion Head Title </span>
+              <svg class="accordion__head-icon svg-icon" aria-hidden="true">
+                <use xlink:href="#chevron-left-medium"></use>
+              </svg>
+            </button>
+            <div class="accordion__body" id="accordion-02">
+              <div class="accordion-vertical">
+                <ul class="accordion-vertical__list">
+                  <li class="accordion-vertical__item">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text"> list-item-text </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="accordion-vertical__item">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text">
+                        list-item-textlist-item-textlist-item-textlist-item-textlist-item-text
+                      </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="accordion-vertical__item">
+                    <button class="accordion-vertical__button">
+                      <span class="accordion-vertical__text"> list-item-text </span>
+                    </button>
+                    <div class="accordion-vertical__action-buttons">
+                      <button class="accordion-vertical__action-button" type="button" title="현재 아이템 삭제">
+                        <svg class="svg-icon accordion-vertical__icon" aria-hidden="true">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

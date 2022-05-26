@@ -1,0 +1,163 @@
+<!-- context menu -->
+<div class="contents">
+  <div class="contents__header">
+    <strong class="contents__title">component</strong>
+    <p class="contents__text">Table</p>
+  </div>
+  <div class="contents__body">
+    <div class="contents__body-inner">
+      <span class="contents__theme">Default</span>
+      <div class="contents__views">
+        <!-- table-primary -->
+        <table class="table table--primary">
+          <caption class="hidden">Table</caption>
+          <thead>
+            <tr>
+              <th>오브젝트 ID</th>
+              <th>변수 명</th>
+              <th>변수 값</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
+            <tr class="tr--selected">
+              <td>Selected Status</td>
+              <td>USER_ID</td>
+              <td>Root</td>
+            </tr>
+            <tr>
+              <td>GLOBAL</td>
+              <td>USER_ID</td>
+              <td>Root</td>
+            </tr>
+            <tr>
+              <td>GLOBAL</td>
+              <td>USER_ID</td>
+              <td>Root</td>
+            </tr>
+            <tr>
+              <td>GLOBAL</td>
+              <td>USER_ID</td>
+              <td>Root</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="contents__body-inner">
+      <span class="contents__theme">Secondary</span>
+      <div class="contents__views">
+        <table class="table table--secondary td--gap-sm">
+          <caption class="hidden">Table</caption>
+          <colgroup>
+            <col width="90" />
+            <col width="90" />
+            <col />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>변수명</th>
+              <th>변수값</th>
+              <th>추가/삭제</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="text" class="text-input" placeholder="placeholder text" />
+              </td>
+              <td>
+                <input type="text" class="text-input" placeholder="placeholder text" />
+              </td>
+              <td>
+                <div class="table__action-buttons">
+                  <button class="button button--icon button--support" type="button" title="추가">
+                    <svg class="svg-icon" aria-hidden="true">
+                      <use xlink:href="#plus"></use>
+                    </svg>
+                  </button>
+                  <button class="button button--icon button--danger" type="button" title="삭제">
+                    <svg class="svg-icon" aria-hidden="true">
+                      <use xlink:href="#minus"></use>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="text-input" placeholder="placeholder text" />
+              </td>
+              <td>
+                <input type="text" class="text-input" placeholder="placeholder text" />
+              </td>
+              <td>
+                <div class="table__action-buttons">
+                  <button class="button button--icon button--support" type="button" title="추가">
+                    <svg class="svg-icon" aria-hidden="true">
+                      <use xlink:href="#plus"></use>
+                    </svg>
+                  </button>
+                  <button class="button button--icon button--danger" type="button" title="삭제">
+                    <svg class="svg-icon" aria-hidden="true">
+                      <use xlink:href="#minus"></use>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="contents__body-inner">
+      <span class="contents__theme">Table Scroll</span>
+      <div class="contents__views">
+        <div class="table-scroll">
+          <table class="table table--primary">
+            <caption class="hidden">Table</caption>
+            <thead>
+              <tr>
+                <th>오브젝트 ID</th>
+                <th>변수 명</th>
+                <th>변수 값</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="overflow-y" style="max-height: 120px;">
+            <!-- table-primary -->
+            <table class="table table--primary">
+              <caption class="hidden">Table</caption>
+              <tbody>
+                <!-- 선택 되었을 경우, tr--selected 클래스 추가-->
+                <tr class="tr--selected">
+                  <td>Selected Status</td>
+                  <td>USER_ID</td>
+                  <td>Root</td>
+                </tr>
+                <tr>
+                  <td>GLOBAL</td>
+                  <td>USER_ID</td>
+                  <td>Root</td>
+                </tr>
+                <!-- Drawer 마크업과 스타일링 UI 추가 시작  -->
+                <tr>
+                  <td>GLOBAL</td>
+                  <td>USER_ID</td>
+                  <td>Root</td>
+                </tr>
+                <tr>
+                  <td>GLOBAL</td>
+                  <td>USER_ID</td>
+                  <td>Root</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

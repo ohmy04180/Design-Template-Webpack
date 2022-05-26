@@ -6,19 +6,38 @@
 }
 
 .side-bar__title {
+  @include font-size("18");
   @include font-weight("medium");
   width: 100%;
-  height: rem(24px);
+  height: rem(40px);
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: $ui-04;
   color: $text-01;
+  user-select: none;
 }
 
-.contents {
-  flex: 1;
-  height: 100%;
-  padding: $spacing-md;
-  overflow-y: auto;
+.snb {
+  padding: $spacing-xs 0;
+}
+
+.snb__item {
+}
+
+.snb__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(32px);
+  text-decoration: none;
+
+  &:hover:not(:disabled) {
+    background-color: $ui-01;
+    color: $text-02;
+  }
+
+  &:active {
+    background-color: $ui-04;
+  }
 }
