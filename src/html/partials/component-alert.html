@@ -1,12 +1,20 @@
 <!-- alert -->
-<div class="contents">
+<div class="contents" id="page--alert">
   <div class="contents__header">
-    <strong class="contents__title">component</strong>
-    <p class="contents__text">Alert</p>
+    <strong class="contents__title">Alert</strong>
   </div>
   <div class="contents__body">
     <div class="contents__body-inner">
-      <span class="contents__theme">Default</span>
+      <div class="contents__theme">
+        <dl>
+          <dt class="contents__theme-title">
+            테마
+          </dt>
+          <dd class="contents__theme-description">
+            [상태 아이콘이 없는 기본 얼럿]
+          </dd>
+        </dl>
+      </div>
       <div class="contents__views">
         <div class="alert alert--default" style="position: static;" role="alertdialog" aria-modal="true">
           <div class="alert__body">
@@ -14,11 +22,12 @@
               <use xlink:href="#info-fill"></use>
             </svg>
             <div class="alert__contents">
-              <p class="alert__text">Alert Contents Here.</p>
+              <strong class="alert__title">얼럿 타이틀</strong>
+              <p class="alert__text">상태 아이콘이 없는 얼럿으로 텍스트는 여기에 들어갑니다.</p>
             </div>
           </div>
           <div class="alert__foot">
-            <div class="alert__foot-main-buttons">
+            <div class="alert__foot-buttons">
               <button class="button button--link button--lg" type="button">
                 <span>취소</span>
               </button>
@@ -32,33 +41,17 @@
     </div>
 
     <div class="contents__body-inner">
-      <span class="contents__theme">Information</span>
-      <div class="contents__views">
-        <div class="alert alert--info" style="position: static;" role="alertdialog" aria-modal="true">
-          <div class="alert__body">
-            <svg class="alert__icon svg-icon" aria-hidden="true">
-              <use xlink:href="#info-fill"></use>
-            </svg>
-            <div class="alert__contents">
-              <p class="alert__text">Alert<br />이 얼럿은 사용자에게 정보 상태를 알리기 위해 사용합니다.</p>
-            </div>
-          </div>
-          <div class="alert__foot">
-            <div class="alert__foot-main-buttons">
-              <button class="button button--link button--lg" type="button">
-                <span>취소</span>
-              </button>
-              <button class="button button--primary button--lg" type="button">
-                <span>확인</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="contents__body-inner">
-      <span class="contents__theme">Success</span>
+      <div class="contents__theme">
+        <dl>
+          <dt class="contents__theme-title">
+            테마
+          </dt>
+          <dd class="contents__theme-description">
+            [상태 아이콘이 있는 성공 안내 얼럿]
+          </dd>
+        </dl>
+      </div>
       <div class="contents__views">
         <div class="alert alert--success" style="position: static;" role="alertdialog" aria-modal="true">
           <div class="alert__body">
@@ -66,14 +59,15 @@
               <use xlink:href="#checkmark-fill"></use>
             </svg>
             <div class="alert__contents">
-              <p class="alert__text">Alert<br />이 얼럿은 사용자에게 성공 상태를 알리기 위해 사용합니다.</p>
+              <strong class="alert__title">얼럿 타이틀</strong>
+              <p class="alert__text">이 얼럿은 사용자에게 성공 상태를 알리기 위해 사용합니다.</p>
             </div>
           </div>
           <div class="alert__foot">
-            <div class="alert__foot-main-buttons">
-              <button class="button button--link button--lg" type="button">
-                <span>취소</span>
-              </button>
+            <button class="button button--link button--lg" type="button">
+              <span>취소</span>
+            </button>
+            <div class="alert__foot-buttons">
               <button class="button button--primary button--lg" type="button">
                 <span>확인</span>
               </button>
@@ -84,7 +78,17 @@
     </div>
 
     <div class="contents__body-inner">
-      <span class="contents__theme">Warning</span>
+
+      <div class="contents__theme">
+        <dl>
+          <dt class="contents__theme-title">
+            테마
+          </dt>
+          <dd class="contents__theme-description">
+            [상태 아이콘이 있는 경고 안내 얼럿]
+          </dd>
+        </dl>
+      </div>
       <div class="contents__views">
         <div class="alert alert--warning" style="position: static;" role="alertdialog" aria-modal="true">
           <div class="alert__body">
@@ -92,34 +96,12 @@
               <use xlink:href="#warning-fill"></use>
             </svg>
             <div class="alert__contents">
-              <p class="alert__text">Alert<br />이 얼럿은 사용자에게 경고 상태를 알리기 위해 사용합니다.</p>
+              <strong class="alert__title">얼럿 타이틀</strong>
+              <p class="alert__text">이 얼럿은 사용자에게 경고 상태를 알리기 위해 사용합니다.</p>
             </div>
           </div>
           <div class="alert__foot">
-            <div class="alert__foot-main-buttons">
-              <button class="button button--negative button--lg" type="button">
-                <span>확인</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contents__body-inner">
-      <span class="contents__theme">Error</span>
-      <div class="contents__views">
-        <div class="alert alert--error" style="position: static;" role="alertdialog" aria-modal="true">
-          <div class="alert__body">
-            <svg class="alert__icon svg-icon" aria-hidden="true">
-              <use xlink:href="#issue-fill"></use>
-            </svg>
-            <div class="alert__contents">
-              <p class="alert__text">Alert<br />이 얼럿은 사용자에게 에러 상태를 알리기 위해 사용합니다.</p>
-            </div>
-          </div>
-          <div class="alert__foot">
-            <div class="alert__foot-main-buttons">
+            <div class="alert__foot-buttons">
               <button class="button button--negative button--lg" type="button">
                 <span>확인</span>
               </button>
